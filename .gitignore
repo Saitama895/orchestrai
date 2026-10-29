@@ -140,3 +140,6 @@ Desktop.ini
 .nyc_output/
 test-results/
 playwright-report/
+
+backend/services/auth/serviceAccountKey.json
+body.json
