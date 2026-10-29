@@ -1,0 +1,142 @@
+
+# ==========================================
+# OrchestrAI - Root Git Ignore
+# ==========================================
+
+# ---- Environment & Secrets ----
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+secrets/
+credentials/
+.aws/
+
+# ---- Node.js / MERN ----
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+.npm/
+.yarn/*
+!.yarn/patches/
+!.yarn/plugins/
+!.yarn/releases/
+!.yarn/versions/
+
+# ---- Frontend Build Outputs ----
+dist/
+build/
+.next/
+.nuxt/
+.output/
+.vite/
+coverage/
+
+# ---- Python / RAG / LangGraph ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+env/
+ENV/
+pip-wheel-metadata/
+wheels/
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+.coverage
+htmlcov/
+
+# ---- Jupyter ----
+.ipynb_checkpoints/
+
+# ---- Models & ML Artifacts ----
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.safetensors
+models/
+checkpoints/
+
+# ---- RAG / Vector Stores / Local Data ----
+chroma_db/
+vector_store/
+faiss_index/
+*.faiss
+*.index
+*.pkl
+*.pickle
+*.sqlite
+*.sqlite3
+data/raw/
+data/processed/
+
+# ---- Logs & Runtime Files ----
+logs/
+*.log
+tmp/
+temp/
+*.pid
+*.seed
+*.pid.lock
+
+# ---- Redis / Databases ----
+dump.rdb
+appendonly.aof
+appendonlydir/
+*.rdb
+*.aof
+data/db/
+*.dump
+
+# ---- Docker / Local Infrastructure ----
+# Keep Dockerfiles, compose files and configs tracked.
+# Ignore local overrides and generated volumes.
+docker-compose.override.yml
+docker-compose.*.local.yml
+.docker/
+
+# ---- AWS / Terraform ----
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+terraform.tfvars
+terraform.tfvars.json
+
+# ---- IDEs & Editors ----
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/launch.json
+!.vscode/tasks.json
+.idea/
+*.swp
+*.swo
+*~
+
+# ---- OS Files ----
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ---- Test / Coverage Reports ----
+.nyc_output/
+test-results/
+playwright-report/
